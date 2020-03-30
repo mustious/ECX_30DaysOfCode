@@ -1,6 +1,6 @@
 def word_score(word: str):
     """"
-    returns the total score based on points associated with each letter
+    returns the total score based on points associated with each letter on a scoreboard
 
     :param word: string which score is to be computed
     :type word: str
@@ -18,6 +18,7 @@ def word_score(word: str):
         "10": ["q", "z"]
     }
     total_score = 0
+    
     for letter in word:
         for key, item in points.items():
             if letter in item:
